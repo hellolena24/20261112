@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+   background: linear-gradient(to bottom, #fff8ee, #e8c5a5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.bear {
+    width: 320px;
+    max-width: 100%;
+    position: relative;
+}
+
+.ear {
+    width: 90px;
+    height: 100px;
+    background-color: #dba776;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+}
+
+.ear-left {
+    left: 8px;
+}
+
+.ear-right {
+    right: 8px;
+}
+
+.head {
+    height: 145px;
+    background-color: #dba776;
+    border-radius: 150px 150px 0 0;
+
+    position: relative;
+    top: 25px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding-top: 45px;
+}
+
+.eye {
+    width: 12px;
+    height: 15px;
+    background-color: #493329;
+    border-radius: 50%;
+}
+
+.nose {
+    width: 30px;
+    height: 23px;
+    background-color: #493329;
+    border-radius: 50px;
+
+    margin: 15px auto 0;
+}
+
+.calculator {
+    background-color: #dba776;
+    padding: 25px;
+    border-radius: 20px 20px 45px 45px;
+
+    position: relative;
+}
+
+.screen {
+    height: 65px;
+    background-color: #b8baa0;
+    border: 4px solid #b98459;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+    padding: 0 12px;
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    color: #384033;
+
+    text-align: right;
+    line-height: 57px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+button {
+    flex: 1;
+    min-width: 0;
+    height: 48px;
+
+    background-color: #fff8ed;
+    border: 1px solid #aa7957;
+    border-radius: 14px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #68452f;
+
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.bottom .plus {
+    flex: none;
+    width: calc((100% - 30px) / 4);
+    height: auto;
+}
+
+.function {
+    background-color: #ffda57;
+}
+
+.equal {
+    background-color: #95633f;
+    color: #ffdf69;
+}
+
+button:hover {
+    background-color: #f0bd81;
+}
+
+button:active {
+    transform: translateY(2px);
+}
